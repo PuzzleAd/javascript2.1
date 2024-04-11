@@ -80,55 +80,111 @@
 // console.log(Math.ceil(number));
 
 
-let price = 0;
-let age = Number(prompt("Enter your age: "));
 
-if (age < 10 && age > 0) {
-    price = 5;
-} else if(age >= 10 && age < 65){
-    price = 15;
-}else if(age >= 65){
-    price = 10;
-}else{
-    console.log("Change your prompts");
-}
+// TODO: task 6
 
-let type = prompt("Enter movie type(3D or regular): ");
-type = type.toUpperCase();
+// let price = 0;
+// let age = Number(prompt("Enter your age: "));
 
-switch (type) {
-    case "3D":
-        price = price +5
+// if (age < 10 && age > 0) {
+//     price = 5;
+// } else if(age >= 10 && age < 65){
+//     price = 15;
+// }else if(age >= 65){
+//     price = 10;
+// }else{
+//     console.log("Change your prompts");
+// }
+
+// let type = prompt("Enter movie type(3D or regular): ");
+// type = type.toUpperCase();
+
+// switch (type) {
+//     case "3D":
+//         price = price +5
+//         break;
+//     case "REGULAR":
+//         price = price + 0;
+//         break;
+//     default:
+//         console.log("Change your prompts");
+//         break;
+// }
+
+// let dayTime = prompt("Enter time of day(matinee or evening): ");
+// dayTime = dayTime.toUpperCase();
+
+// switch (dayTime) {
+//     case "EVENING":
+//         price = price + 5;
+//         break;
+//     case "MATINEE":
+//         price = price + 0;
+//         break;
+//     default:
+//         console.log("Change your prompts");
+//         break;
+// }
+
+
+// let discount = (prompt("Enter your promo code: "));
+
+// if (discount !== "") {
+//     price = price - 5;
+//     console.log(`Your price is ${price}`);
+// } else {
+//     console.log(`Your price is ${price}`);
+// }
+
+// TODO: Task 7
+
+
+let firstPhase = prompt('Welcome to the Quiz Game! Choose a topic:\n1. strings\n2. variable\n3. math');
+
+firstPhase = firstPhase.slice(0, 1);
+
+
+console.log(firstPhase);
+
+let question;
+let answer;
+
+switch (firstPhase) {
+    case "1":
+        question = console.log("What is typeOf(5)?");
+        answer = prompt("Enter your answer: ");
+        answer = answer.toUpperCase();
+        if (answer === "NUMBER") {
+            alert("Your answer is correct!!");
+        } else {
+            alert("Your answer is incorrect, try again!!");   
+        }
         break;
-    case "REGULAR":
-        price = price + 0;
+    case "2":
+        question = console.log("Can let be redeclerated?");
+        answer = prompt("Enter your answer: ");
+        answer = answer.toUpperCase();
+        if (answer === "YES") {
+            alert("Your answer is correct!!");
+        } else {
+            alert("Your answer is incorrect, try again!!");   
+        }
         break;
+    case "3":
+        question = console.log(" what will be consoled console.log(Math.floor(2.1))?");
+        answer = prompt("Enter your answer: ");
+        answer = answer.toUpperCase();
+        if (answer === "ORI") {
+            alert("Your answer is correct!!");
+        } else {
+            alert("Your answer is incorrect, try again!!");   
+        }
+        break;
+
     default:
-        console.log("Change your prompts");
-        break;
-}
-
-let dayTime = prompt("Enter time of day(matinee or evening): ");
-dayTime = dayTime.toUpperCase();
-
-switch (dayTime) {
-    case "EVENING":
-        price = price + 5;
-        break;
-    case "MATINEE":
-        price = price + 0;
-        break;
-    default:
-        console.log("Change your prompts");
+        alert("Wrong prompt given, reenter please!!");
         break;
 }
 
 
-let discount = (prompt("Enter your promo code: "));
 
-if (discount !== "") {
-    price = price - 5;
-    console.log(`Your price is ${price}`);
-} else {
-    console.log(`Your price is ${price}`);
-}
