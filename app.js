@@ -83,58 +83,58 @@
 
 // TODO: task 6
 
-// let price = 0;
-// let age = Number(prompt("Enter your age: "));
+let price = 0;
+let age = Number(prompt("Enter your age: "));
 
-// if (age < 10 && age > 0) {
-//     price = 5;
-// } else if(age >= 10 && age < 65){
-//     price = 15;
-// }else if(age >= 65){
-//     price = 10;
-// }else{
-//     console.log("Change your prompts");
-// }
+if (age < 10 && age > 0) {
+    price = 5;
+} else if(age >= 10 && age < 65){
+    price = 15;
+}else if(age >= 65){
+    price = 10;
+}else{
+    console.log("Change your prompts");
+}
 
-// let type = prompt("Enter movie type(3D or regular): ");
-// type = type.toUpperCase();
+let type = prompt("Enter movie type(3D or regular): ");
+type = type.toUpperCase();
 
-// switch (type) {
-//     case "3D":
-//         price = price +5
-//         break;
-//     case "REGULAR":
-//         price = price + 0;
-//         break;
-//     default:
-//         console.log("Change your prompts");
-//         break;
-// }
+switch (type) {
+    case "3D":
+        price = price +5
+        break;
+    case "REGULAR":
+        price = price + 0;
+        break;
+    default:
+        console.log("Change your prompts");
+        break;
+}
 
-// let dayTime = prompt("Enter time of day(matinee or evening): ");
-// dayTime = dayTime.toUpperCase();
+let dayTime = prompt("Enter time of day(matinee or evening): ");
+dayTime = dayTime.toUpperCase();
 
-// switch (dayTime) {
-//     case "EVENING":
-//         price = price + 5;
-//         break;
-//     case "MATINEE":
-//         price = price + 0;
-//         break;
-//     default:
-//         console.log("Change your prompts");
-//         break;
-// }
+switch (dayTime) {
+    case "EVENING":
+        price = price + 5;
+        break;
+    case "MATINEE":
+        price = price + 0;
+        break;
+    default:
+        console.log("Change your prompts");
+        break;
+}
 
 
-// let discount = (prompt("Enter your promo code: "));
+let discount = (prompt("Enter your promo code: "));
 
-// if (discount !== "") {
-//     price = price - 5;
-//     console.log(`Your price is ${price}`);
-// } else {
-//     console.log(`Your price is ${price}`);
-// }
+if (discount !== "") {
+    price = price - 5;
+    console.log(`Your price is ${price}`);
+} else {
+    console.log(`Your price is ${price}`);
+}
 
 // TODO: Task 7
 
