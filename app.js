@@ -141,10 +141,14 @@ if (discount !== "") {
 
 let firstPhase = prompt('Welcome to the Quiz Game! Choose a topic:\n1. strings\n2. variable\n3. math');
 
+if(firstPhase === ""){
+    alert("Enter something!!");
+}
+
 firstPhase = firstPhase.slice(0, 1);
 
 
-console.log(firstPhase);
+
 
 let question;
 let answer;
